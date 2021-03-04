@@ -1,3 +1,4 @@
+//a welcome page 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -18,14 +19,11 @@ class FDemo extends JFrame implements ActionListener
         fp =new FirstPage(this);
         cn.add("FirstPage",fp);
 
-
         ab =new About(this);
         cn.add("About",ab);
 
         log = new Login(this);
-        cn.add("Login",log);
-        
-        
+        cn.add("Login",log); 
     }
     public void actionPerformed(ActionEvent e)
     {
