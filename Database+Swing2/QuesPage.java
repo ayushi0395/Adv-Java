@@ -7,6 +7,7 @@ class QuesPage extends JPanel  implements ActionListener
 	JTextField t0,t1,t2,t3,t4;
 	JRadioButton r1,r2,r3,r4;
     JLabel u1,u2,u3,u4;
+    JButton currentStatus = this.q1;
 	QuesPage(FDemo f)
 	{
           setLayout(null);
@@ -195,15 +196,52 @@ class QuesPage extends JPanel  implements ActionListener
         g.drawImage(new ImageIcon("ques.png").getImage(),0,0,null);
     }
 	public void actionPerformed(ActionEvent e)
-	{
-          
-        if(e.getSource()==b1 || e.getSource()==q1) 
-		{         
+	{  
+		/*
+		if(e.getSource()!=b1 && e.getSource()!=b2)
+		{
+           	currentStatus = (JButton)e.getSource();
+		}
+
+		if(e.getSource() == b1)
+		{				
+		System.out.println("xx"+currentStatus);	
+		if(currentStatus == null) {
 			t0.setText("Question1:  How many methods does object class has?");//c
 			t1.setText("5");
 			t2.setText("10");
 			t3.setText("11");
 			t4.setText("12");
+			currentStatus = q1;
+			}						
+			 if(currentStatus == q1) {
+			t0.setText("Question2:How many final methods does object class has?");//b
+			t1.setText("5");
+			t2.setText("6");
+			t3.setText("7");
+			t4.setText("4");
+			 	currentStatus = q2;
+			}
+			if(currentStatus == q2) {
+			t0.setText("Question3:If we have class A{} and class B extends A {},whic will be true among below ?");
+			t1.setText("A a =new B();");
+			t2.setText("B b =new A();");
+			t3.setText("both a and b ");
+			t4.setText("None ");
+				currentStatus = q3;
+			}
+		}							
+
+		*/
+		
+          
+        if(e.getSource()==q1) 
+		{         
+			t0.setText("Question1:  How many methods does object class has?");//c
+			t1.setText("5");
+			t2.setText("10");
+			t3.setText("11");
+			t4.setText("12");											
 		}
 		if( e.getSource()==q2)
 		{
