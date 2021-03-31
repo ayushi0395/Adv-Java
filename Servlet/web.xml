@@ -1,0 +1,13 @@
+<web-app>
+	
+     <servlet>
+     <servlet-name>ayushi</servlet-name>
+     <servlet-class>ServerDemo</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+         <servlet-name>ayushi</servlet-name>
+         <url-pattern>/welcome</url-pattern>
+     </servlet-mapping>
+
+</web-app>
