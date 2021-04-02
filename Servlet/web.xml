@@ -5,9 +5,20 @@
      <servlet-class>ServerDemo</servlet-class>
      </servlet>
 
+     <servlet>
+     <servlet-name>ayushi2</servlet-name>
+     <servlet-class>ServerDemo2</servlet-class>
+     </servlet>
+
+
      <servlet-mapping>
          <servlet-name>ayushi</servlet-name>
          <url-pattern>/welcome</url-pattern>
+     </servlet-mapping>
+
+     <servlet-mapping>
+         <servlet-name>ayushi2</servlet-name>
+         <url-pattern>/demo2</url-pattern>
      </servlet-mapping>
 
 </web-app>
