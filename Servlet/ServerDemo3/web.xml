@@ -1,0 +1,32 @@
+ <web-app>
+	
+     <servlet>
+     <servlet-name>ayushi</servlet-name>
+     <servlet-class>ServerDemo</servlet-class>
+     </servlet>
+     <servlet>
+     	<servlet-name>ayushi2</servlet-name>
+     	<servlet-class>ServerDemo2</servlet-class>
+     </servlet>
+     <servlet>
+         <servlet-name>ayushi3</servlet-name>
+         <servlet-class>ServerDemo3</servlet-class>
+     </servlet>
+
+     <servlet-mapping>
+         <servlet-name>ayushi</servlet-name>
+         <url-pattern>/welcome</url-pattern>
+     </servlet-mapping>
+
+     <servlet-mapping>
+     	<servlet-name>ayushi2</servlet-name>
+     	<url-pattern>/aaa</url-pattern>
+     </servlet-mapping>
+
+      <servlet-mapping>
+     	<servlet-name>ayushi3</servlet-name>
+     	<url-pattern>/bbb</url-pattern>
+     </servlet-mapping>
+
+
+</web-app>
